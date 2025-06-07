@@ -1,0 +1,301 @@
+$title-color: #0027d5;
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #fbfbfb;
+  width: 100%;
+}
+
+.manu {
+  ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 25px;
+    list-style: none;
+
+    li {
+      font-family: Noto Sans TC;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  .banner-left {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .banner-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+
+    p {
+      font-family: Noto Sans TC;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+    div {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      h2 {
+        font-family: Noto Sans TC;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: $title-color;
+      }
+      h3 {
+        font-family: Noto Sans TC;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: white;
+        border-radius: 999px;
+        padding: 3px 10px;
+        background-color: $title-color;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    h1 {
+      font-family: Noto Sans TC;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+  }
+}
+
+/*banner -手機*/
+@media (max-width: 737px) {
+  .banner {
+    flex-direction: column;
+    width: 100%;
+
+    .banner-left {
+      width: 100%;
+    }
+    .banner-right {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      p {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      div {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.page-content {
+  max-width: 636px;
+  margin: 0 auto;
+  margin-top: 75px;
+  h2 {
+    color: $title-color;
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-bottom: 24px;
+  }
+  p {
+    font-family: Noto Sans TC;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  div {
+    margin-bottom: 25px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  img {
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+  h3 {
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  li {
+    font-family: Noto Sans TC;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .suggestion {
+    p {
+      margin-bottom: 2px;
+    }
+  }
+  .note {
+    background-color: #ededed;
+    padding: 24px;
+    border-radius: 30px;
+
+    p {
+      font-family: Noto Sans TC;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      margin-bottom: 0px;
+    }
+  }
+  .conclusion {
+    p {
+      a {
+        color: $title-color;
+      }
+    }
+  }
+  .related-links {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    .prev-btn-left {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      height: 40px;
+      border-radius: 999px;
+      padding-left: 10px;
+      padding-right: 20px;
+      border: 1px black solid;
+      background-color: white;
+    }
+    .prev-btn-right {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      height: 40px;
+      border-radius: 999px;
+      padding-left: 20px;
+      padding-right: 10px;
+      border: 1px black solid;
+      background-color: white;
+    }
+  }
+}
+
+.footer {
+  border-top: 1px solid black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  .yt,
+  .pdc,
+  .fb,
+  .linkend,
+  .ig {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .yt {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon.png?raw=true");
+  }
+
+  .pdc {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-1.png?raw=true");
+  }
+
+  .fb {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-2.png?raw=true");
+  }
+
+  .linkend {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/icons8-linkedin.png?raw=true");
+  }
+
+  .ig {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/onlyIcon-3.png?raw=true");
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  p {
+    font-size: 16px;
+  }
+}
+
+/*page-content -手機*/
+@media (max-width: 737px){
+    .page-content{
+        padding-left: 10px;
+        padding-right: 10px;
+
+        img{
+            width: 100%;
+        }
+
+        .btn{
+            .icon{
+                width: 20px;
+            }
+        }
+    }
+}
+
+/*footer -手機*/
+@media (max-width: 737px){
+    .footer{
+        display: none;
+    }
+}
